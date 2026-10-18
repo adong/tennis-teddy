@@ -2,6 +2,8 @@
 
 [![Tennis: Teddy & Tommy title screen](docs/screenshot.jpg)](https://adong.github.io/tennis-teddy/)
 
+Press **?** any time (or tap the round **?** button on the left edge) to see the keys. The game waits while you look.
+
 A side-view cartoon tennis game starring Teddy and Tommy, in the spirit of the old flash tennis games. It's built with Claude Code from plain JavaScript and Three.js, on the shared Claude Games kit.
 There are no image, model or audio files: the players are the kit's blocky characters, every texture is painted on a canvas, and every sound is synthesised.
 Rallies are bouncy and easy to read. The ball has a round shadow right under it on the court, so you can see where it'll come down, and on Easy a yellow ring shows where it will bounce.
