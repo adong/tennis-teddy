@@ -2,6 +2,10 @@
 
 [![Tennis: Teddy & Tommy title screen](docs/screenshot.jpg)](https://adong.github.io/tennis-teddy/)
 
+Teddy vs Tommy on the park court: smash, lob, and call your brother for doubles. 1 or 2 players.
+
+**中文：** Teddy 对 Tommy 公园网球赛：扣杀、高吊，还能叫兄弟来打双打。单人或双人。
+
 Press **?** any time (or tap the round **?** button on the left edge) to see the keys. The game waits while you look.
 Tap the language button under it (the A文 icon) to switch between English and 中文; the dashboard and every game remember the choice.
 
@@ -10,7 +14,7 @@ There are no image, model or audio files: the players are the kit's blocky chara
 Rallies are bouncy and easy to read. The ball has a round shadow right under it on the court, so you can see where it'll come down, and on Easy a yellow ring shows where it will bounce.
 Either player can call in the other brother. He runs onto your side for about 10 seconds of doubles, hands you a treat, returns the balls you can't reach, and saves one ball that gets past you.
 
-The name is a working title. It lives in one place, `js/title.js`.
+The name lives in one place, `js/title.js`.
 
 ## Play
 
