@@ -3,7 +3,7 @@
 [![Tennis: Teddy & Tommy title screen](docs/screenshot.jpg)](https://adong.github.io/tennis-teddy/)
 
 Press **?** any time (or tap the round **?** button on the left edge) to see the keys. The game waits while you look.
-Tap **中文 / EN** under it to switch between English and 中文 (the dashboard and every game remember the choice).
+Tap the language button under it (the A文 icon) to switch between English and 中文; the dashboard and every game remember the choice.
 
 A side-view cartoon tennis game starring Teddy and Tommy, in the spirit of the old flash tennis games. It's built with Claude Code from plain JavaScript and Three.js, on the shared Claude Games kit.
 There are no image, model or audio files: the players are the kit's blocky characters, every texture is painted on a canvas, and every sound is synthesised.
