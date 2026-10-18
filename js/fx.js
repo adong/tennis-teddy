@@ -108,7 +108,7 @@
     g.strokeStyle = '#14121f';
     g.stroke();
     g.rotate(-0.12);
-    g.font = `${word.length > 5 ? 40 : 52}px ${FONT}`;
+    g.font = `${word.length > 5 ? 40 : 52}px ${FONT}, ${Kit.gfx.EMOJI_FONT}`;
     g.textAlign = 'center';
     g.textBaseline = 'middle';
     g.lineWidth = 10;
@@ -121,6 +121,7 @@
 
   const bursts = [];
   function burst(x, y, z, word, fill = '#ffd400', size = 1.4) {
+    if (Kit.lang) word = Kit.lang.t(word); // drawn on a canvas, so it's translated here (中文)
     let b = bursts.find((s) => !s.visible);
     if (!b) {
       b = new T.Sprite(new T.SpriteMaterial({ transparent: true, depthWrite: false, depthTest: false }));

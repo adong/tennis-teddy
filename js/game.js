@@ -78,7 +78,8 @@
     const { entry, person } = buildPerson(id, side, alt, 1);
     let tag = null;
     if (label) {
-      tag = Kit.gfx.nameTag(label, label === 'CPU' ? '#ff8a8a' : SIDE_COLOR[side]);
+      tag = Kit.gfx.nameTag(Kit.lang.t(label), label === 'CPU' ? '#ff8a8a' : SIDE_COLOR[side]);
+      tag.userData.label = label;
       tag.scale.multiplyScalar(0.62);
       tag.renderOrder = 15;
       scene.add(tag);
@@ -112,6 +113,19 @@
     scene.add(p.root);
     umpire = p;
   }
+
+  // The 1P / 2P / CPU tags are drawn on a canvas: draw them again when the language changes (中文 / EN).
+  function relabel() {
+    for (const v of views) {
+      if (!v.tag) continue;
+      const label = v.tag.userData.label;
+      const fresh = Kit.gfx.nameTag(Kit.lang.t(label), label === 'CPU' ? '#ff8a8a' : SIDE_COLOR[v.side]);
+      v.tag.material.map.dispose();
+      v.tag.material.map = fresh.material.map;
+      v.tag.material.needsUpdate = true;
+    }
+  }
+  Kit.lang.onChange(relabel);
 
   function clearViews() {
     for (const v of views) {

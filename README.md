@@ -3,6 +3,7 @@
 [![Tennis: Teddy & Tommy title screen](docs/screenshot.jpg)](https://adong.github.io/tennis-teddy/)
 
 Press **?** any time (or tap the round **?** button on the left edge) to see the keys. The game waits while you look.
+Tap **中文 / EN** under it to switch between English and 中文 (the dashboard and every game remember the choice).
 
 A side-view cartoon tennis game starring Teddy and Tommy, in the spirit of the old flash tennis games. It's built with Claude Code from plain JavaScript and Three.js, on the shared Claude Games kit.
 There are no image, model or audio files: the players are the kit's blocky characters, every texture is painted on a canvas, and every sound is synthesised.
@@ -142,6 +143,8 @@ js/stage.js       the park court: lines, net, fence and windscreen, bunting, tre
 js/fx.js          the ball, its shadow and trail, the landing ring, POW bursts, dust, confetti, flying emoji
 js/sfx.js         tennis sounds on top of Kit.sound
 js/game.js        scene, camera, screens, HUD, companions and treats, main loop, window.game hooks
+js/keys.js        the keys the ? panel shows (Kit.help)
+js/zh.js          中文: the page's words, the umpire's calls, toasts, POW bursts and the ? panel (Kit.lang)
 tools/soak.js     the headless match runner (node)
 kit/              copy of ~/claude-games/kit (python3 ../kit/tools/sync.py .), never edited here
 dist/tennis-teddy.html   the single-page build
